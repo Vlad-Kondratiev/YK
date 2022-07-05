@@ -1,8 +1,13 @@
 /* Header */
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: var(--primary-bg--mode-dark);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   &__container {
     display: flex;
@@ -18,9 +23,10 @@
   }
 
   &__wrapper {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    display: none;
+    // display: flex;
+    // align-items: center;
+    // margin-left: auto;
   }
 
   &__phone {
@@ -41,6 +47,12 @@
     &:focus {
       color: var(--accent-cl);
     }
+  }
+}
+
+.nav {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
