@@ -9,14 +9,15 @@
     &__icon {
         width: 44px;
         height: 44px;
-
+    
         &-open {
             opacity: 1;
+            fill: #ffffff;
         }
-
+    
         &-close {
             opacity: 0;
         }
     }
-
+}
 
