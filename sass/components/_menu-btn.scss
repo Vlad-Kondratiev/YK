@@ -1,0 +1,22 @@
+.menu-btn {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+
+    &__icon {
+        width: 44px;
+        height: 44px;
+
+        &-open {
+            opacity: 1;
+        }
+
+        &-close {
+            opacity: 0;
+        }
+    }
+
+
