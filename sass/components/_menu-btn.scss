@@ -1,10 +1,21 @@
 .menu-btn {
-    display: block;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
     width: 44px;
     height: 44px;
+
     background-color: transparent;
     border: transparent;
     outline: transparent;
+    z-index: 99;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
 
     &__icon {
         width: 44px;
@@ -12,7 +23,7 @@
     
         &-open {
             opacity: 1;
-            fill: #ffffff;
+            fill: #2f2f2f;
         }
     
         &-close {
