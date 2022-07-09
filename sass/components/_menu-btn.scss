@@ -17,18 +17,30 @@
         display: none;
     }
 
+    @media screen and (min-width: 768px) {
+        display: none; 
+    }
+
     &__icon {
         width: 44px;
         height: 44px;
     
         &-open {
             opacity: 1;
-            fill: #2f2f2f;
+            fill: #ffffff;
         }
     
         &-close {
             opacity: 0;
         }
     }
+}
+
+.menu-btn.is-active .menu-btn__icon-open {
+    opacity: 0;
+}
+
+.menu-btn.is-active .menu-btn__icon-close {
+    opacity: 1;
 }
 
