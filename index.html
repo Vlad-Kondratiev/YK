@@ -152,24 +152,48 @@
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
-              <img
-                class="about-img"
-                src="./images/about/img-1.jpg"
-                alt="Бритье бороды"
-                width="270"
-                height="445"
-              />
+              <picture class="about-img">
+                <source 
+                    srcset="
+                        ./images/barb_img/about1_1200_1x.jpg 1x,
+                        ./images/barb_img/about1_1200_2x.jpg 2x"
+                    media="(min-width: 1280px)"
+                />
+                <source 
+                    srcset="
+                    ./images/barb_img/about1_768_1x.jpg 1x,
+                        ./images/barb_img/about1_768_2x.jpg 2x"
+                    media="(min-width: 768px)"
+                />
+                <img
+                    src="./images/barb_img/about1_768_1x.jpg" 
+                    alt="Бритье бороды" 
+                />
+              </picture>
             </li>
+
             <li class="about-item">
-              <img
-                class="about-img"
-                src="./images/about/img-2.jpg"
-                alt="Стрижка под опасную бритву"
-                width="270"
-                height="445"
-              />
+              <picture class="about-img">
+                <source 
+                    srcset="
+                        ./images/barb_img/about2_1200_1x.jpg 1x,
+                        ./images/barb_img/about2_1200_2x.jpg 2x"
+                    media="(min-width: 1280px)"
+                />
+                <source 
+                    srcset="
+                    ./images/barb_img/about2_768_1x.jpg 1x,
+                        ./images/barb_img/about2_768_2x.jpg 2x"
+                    media="(min-width: 768px)"
+                />
+                <img
+                    src="./images/barb_img/about2_768_1x.jpg" 
+                    alt="Бритье бороды" 
+                />
+              </picture>
             </li>
           </ul>
+
           <div class="about-wrapper">
             <p class="uppertitle uppertitle--mode-light">О нас</p>
             <h2 class="title title--mode-light">
