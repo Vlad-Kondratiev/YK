@@ -1,12 +1,66 @@
 /* Hero */
 .hero {
-  background-color: var(--primary-bg--mode-dark);
+  max-width: 767px;
+  min-height: 582px;
+  background-image:
+    linear-gradient(
+        to right,
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ), 
+    url(../images/barb_img/hero_480_2x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width:768px) {
+    max-width: 1279px;
+    min-height: 680px;
+    background-image: 
+    linear-gradient(
+        to right,
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ), 
+    url(../images/barb_img/hero_img768_2x.jpg);
+  }
+
+  @media screen and (min-width:1280px) {
+    max-width: 1600px;
+    min-height: 680px;
+    background-image: 
+    linear-gradient(
+        to right,
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ), 
+    url(../images/barb_img/hero1200_2x.jpg);
+  }
+}
+
+.hero .container {
+  position: absolute;
+  height: 582px;
+}
+
+.hero .uppertitle {
+  margin-top: 210px;
+}
+
+.hero__subtitle {
+  width: 306px;
+  font-size: 16px;
+  line-height: 1.62;
 }
 
 .hero__list {
-  display: flex;
-  align-items: center;
-  position: relative;
+  display: none;
+  @media screen and (min-width:768px) {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
 }
 
 .hero__item {
@@ -18,14 +72,17 @@
 
 .hero__title {
   margin-bottom: 20px;
-
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 72px;
-  line-height: 1.18;
-
+  font-size: 48px;
+  line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--primary-txt--mode-dark);
+
+  @media screen and (min-width:1279px) {
+    font-size: 72px;
+    line-height: 1.18; 
+  }
 }
 
 .hero__subtitle {

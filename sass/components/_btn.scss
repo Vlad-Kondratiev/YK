@@ -3,7 +3,7 @@
 .main-btn {
   @extend %btn;
 
-  @include btn-size(small);
+  // @include btn-size(small);
 
   &--mode-light {
     color: $primary-txt--mode-light;
