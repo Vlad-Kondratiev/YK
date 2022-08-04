@@ -1,9 +1,12 @@
 %btn {
-  width: 100%;
-  padding: 12px;
+  padding: 12px 20px;
+  max-width: 200px;
+  min-width: 160px;
+  min-height: 40px;
 
+  font-family: inherit;
   font-weight: 600;
-  // font-size: 12px;
+  font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -13,5 +16,5 @@
   background-color: transparent;
   cursor: pointer;
 
-  transition: background-color var(--anim-slow), border-color var(--anim-slow);
+  transition: background-color var(--fast-anim);
 }
