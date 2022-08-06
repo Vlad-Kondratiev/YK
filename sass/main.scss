@@ -11,12 +11,14 @@
 @import "./base/base";
 
 // conponents main page
+@import "./base/js-selectors";
 @import "./components/btn";
 @import "./components/menu-btn";
 @import "./components/mobile-menu";
 @import "./components/form/module";
 @import "./components/modal";
 @import "./components/container";
+@import "./components/socials";
 
 @import "./components/header";
 @import "./components/hero";
