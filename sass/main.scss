@@ -1,32 +1,36 @@
-// variables
-@import "./variables/variables";
 
 // utils
-@import "./utils/mixins";
+@import "./utils/vars";
 @import "./utils/visually-hidden";
 @import "./utils/placeholders";
 @import "./utils/animation-pulsate";
-@import "./slider/slider-pagination";
+@import "./utils/mixins";
 
 // base styles
-@import "./base/base";
-
-// conponents main page
+@import "./base/common";
+@import "./base/reset";
 @import "./base/js-selectors";
-@import "./components/btn";
-@import "./components/menu-btn";
-@import "./components/mobile-menu";
-@import "./components/form/module";
-@import "./components/modal";
-@import "./components/container";
+@import "./base/animations";
+@import "./base/container";
+@import "./base/card-set";
+
+// conponents
+@import "./components/button";
+@import "./components/socials";
+@import "./components/slider/slider-modul";
+@import "./components/slide-top-btn";
+@import "./components/chat-menu";
+@import "./components/modal-form";
+@import "./components/contacts-form";
 @import "./components/socials";
 
-@import "./components/header";
-@import "./components/hero";
-@import "./components/about";
-@import "./components/price";
-@import "./components/advantages";
-@import "./components/team";
-@import "./components/gallery";
-@import "./components/contacts";
-@import "./components/footer";
+// layouts
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/about";
+@import "./layouts/price";
+@import "./layouts/advantages";
+@import "./layouts/team";
+@import "./layouts/gallery";
+@import "./layouts/contacts";
+@import "./layouts/footer";
