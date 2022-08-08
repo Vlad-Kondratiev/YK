@@ -1,7 +1,7 @@
 /* About us */
-.about-container {
+.about__container {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .about-list {
@@ -21,49 +21,75 @@
   }
   
   @media screen and (min-width:1280px) {
+    margin-right: 64px;
     flex-direction: row;
     align-items: flex-end;
     
   }
 }
 
-.about-container .title {
-  @media screen and (max-width:767px) {
-    width: 330px;
-    margin-bottom: 20px;
-
-    font-size: 28px;
-  } 
+.about-list__item {
+  margin-right: 30px;
+  overflow: hidden;
 }
 
-.about-img {
-  display: block;
-  width: 100%;
-  height: auto;
-
-  @media screen and (min-width:768px) and (max-width:1279px) {
-    width: 330px;
-  }
-
-
-}
-
-.about-item {  
-  @media screen and (min-width:1280px) {
-    margin-right: 30px;
-    
-  } 
-}
-
-.about-item:last-child {
+.about-list__item:last-child {
   margin-right: 0;
 }
 
-.about-item:not(:last-child) {
-  @media screen and (min-width:767px) and (max-width:1279px) {
-    margin-bottom: 30px;
-  }
+.about-list__img {
+  transition: transform var(--anim-slow);
 }
+
+.about-list__item:hover .about-list__img {
+  transform: scale(1.15);
+}
+
+// .about-container .title {
+//   @media screen and (max-width:767px) {
+//     width: 330px;
+//     margin-bottom: 20px;
+
+//     font-size: 28px;
+//   } 
+// }
+
+// .about-list__img {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+
+//   @media screen and (min-width:768px) and (max-width:1279px) {
+//     width: 330px;
+//   }
+
+//   transition: transform var(--anim-slow);
+// }
+
+// .about-list__img {
+//   transition: transform var(--slow-anim);
+// }
+
+// .about-list__item:hover .about-list__img {
+//   transform: scale(1.15);
+// }
+
+// .about-item {  
+//   @media screen and (min-width:1280px) {
+//     margin-right: 30px;
+    
+//   } 
+// }
+
+// .about-item:last-child {
+//   margin-right: 0;
+// }
+
+// .about-item:not(:last-child) {
+//   @media screen and (min-width:767px) and (max-width:1279px) {
+//     margin-bottom: 30px;
+//   }
+// }
 
 .about-wrapper {
 
@@ -73,7 +99,7 @@
 
   @media screen and (min-width:1280px) {
     width: 500px;
-    margin-left: auto;
+    // margin-left: auto;
   }
 }
 
@@ -87,14 +113,23 @@
   }
 }
 
+.about__subtitle {
+  margin-bottom: 20px;
+}
+
+.about__description {
+  margin-bottom: 40px;
+}
+
+
 
 .about-descr {
   margin-bottom: 40px;
 
-  font-size: 14px;
-  line-height: 1.86;
-  letter-spacing: 0.02em;
+  // font-size: 14px;
+  // line-height: 1.86;
+  // letter-spacing: 0.02em;
 
-  color: var(--main-txt--mode-light);
+  // color: var(--main-txt--mode-light);
   
 }

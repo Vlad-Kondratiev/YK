@@ -172,10 +172,10 @@
 
       <!-- Секція Про нас -->
       <section class="about section" id="about">
-        <div class="container about-container">
+        <div class="container about__container">
           <ul class="about-list list">
-            <li class="about-item">
-              <picture class="about-img">
+            <li class="about-list__item">
+              <picture class="about-list__img">
                 <source 
                     srcset="
                         ./images/barb_img/about1_1200_1x.jpg 1x,
@@ -195,8 +195,8 @@
               </picture>
             </li>
 
-            <li class="about-item">
-              <picture class="about-img">
+            <li class="about-list__item">
+              <picture class="about-list__img">
                 <source 
                     srcset="
                         ./images/barb_img/about2_1200_1x.jpg 1x,
@@ -241,98 +241,48 @@
       </section>
 
       <!-- Секція Послуги та ціни -->
-      <!-- <section class="price__section section" id="price">
-        <div class="price price__container container">
-          <p class="uppertitle uppertitle--mode-dark">
-            Проведи время в компании лучших мастеров
-          </p>
-          <h2 class="title title--mode-dark">Услуги и цены</h2>
-          <ul class="price-item price__list price__list-column list">
-            <li class="price-inner-item">
-              <span class="price-inner-name">Мужская стрижка</span
-              ><span class="price-inner-cost">от 300 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Стрижка бороды</span
-              ><span class="price-inner-cost">от 200 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Стрижка усов</span
-              ><span class="price-inner-cost">от 200 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Бритье опасной бритвой</span
-              ><span class="price-inner-cost">от 200 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Cтрижка у стажера</span>
-              <span class="price-inner-cost">от 50 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Стрижка под насадку</span>
-              <span class="price-inner-cost">от 200 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name"
-                >Детская стрижка (до 12 лет)</span
-              >
-              <span class="price-inner-cost">от 300 грн.</span>
-            </li>
-            <li class="price-inner-item">
-              <span class="price-inner-name">Камуфлирование седины</span>
-              <span class="price-inner-cost">от 200 грн.</span>
-            </li>
-          </ul>
+      <section class="price section" id="price">
+        <div class="container">
+          <p class="uppertitle uppertitle--mode-dark">Проведи время в компании лучших мастеров</p>
+          <h2 class="section-title section-title--mode-dark">Услуги и цены</h2>
+          <ul class="price__list list">
 
-          <ul class="price__list price__list-row list">
-            <li class="price-item price-item-left-side">
+            <li class="price-item">
               <ul class="price-inner-list list">
                 <li class="price-inner-item">
-                  <span class="price-inner-name">Мужская стрижка</span
-                  ><span class="price-inner-cost">от 300 грн.</span>
+                  <span>Мужская стрижка</span> <span>от 300 грн.</span>
                 </li>
                 <li class="price-inner-item">
-                  <span class="price-inner-name">Стрижка бороды</span
-                  ><span class="price-inner-cost">от 200 грн.</span>
+                  <span>Стрижка бороды</span> <span>от 200 грн.</span>
                 </li>
+                <li class="price-inner-item"><span>Стрижка усов</span> <span>от 200 грн.</span></li>
                 <li class="price-inner-item">
-                  <span class="price-inner-name">Стрижка усов</span
-                  ><span class="price-inner-cost">от 200 грн.</span>
-                </li>
-                <li class="price-inner-item">
-                  <span class="price-inner-name">Бритье опасной бритвой</span
-                  ><span class="price-inner-cost">от 200 грн.</span>
+                  <span>Бритье опасной бритвой</span> <span>от 200 грн.</span>
                 </li>
               </ul>
             </li>
-            <li class="price-item price-item-right-side">
+
+            <li class="price-item">
               <ul class="price-inner-list list">
                 <li class="price-inner-item">
-                  <span class="price-inner-name">Cтрижка у стажера</span>
-                  <span class="price-inner-cost">от 50 грн.</span>
+                  <span>Cтрижка у стажера</span> <span>от 50 грн.</span>
                 </li>
                 <li class="price-inner-item">
-                  <span class="price-inner-name">Стрижка под насадку</span>
-                  <span class="price-inner-cost">от 200 грн.</span>
+                  <span>Стрижка под насадку</span> <span>от 200 грн.</span>
                 </li>
                 <li class="price-inner-item">
-                  <span class="price-inner-name"
-                    >Детская стрижка (до 12 лет)</span
-                  >
-                  <span class="price-inner-cost">от 300 грн.</span>
+                  <span>Детская стрижка (до 12 лет)</span> <span>от 300 грн.</span>
                 </li>
                 <li class="price-inner-item">
-                  <span class="price-inner-name">Камуфлирование седины</span>
-                  <span class="price-inner-cost">от 200 грн.</span>
+                  <span>Камуфлирование седины</span> <span>от 200 грн.</span>
                 </li>
               </ul>
             </li>
+
           </ul>
-          <button class="main-btn main-btn--mode-dark" type="button">
-            онлайн-запись
-          </button>
+          <button class="btn btn--mode-dark" type="button">онлайн-запись</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секція Переваги -->
       <!-- <section class="advantages section">
