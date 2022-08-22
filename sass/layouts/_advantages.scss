@@ -1,6 +1,7 @@
 /* Advantages */
 .advantages-container {
   display: flex;
+  justify-content: center;
   @media screen and (max-width:1279px) {
     flex-direction: column-reverse;
   }
@@ -128,7 +129,14 @@
 .advantages-descr {
   font-weight: 600;
   font-size: 11px;
-  letter-spacing: 0;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
 
   color: #303030;
+}
+
+.advantages-group {
+  width: 500px;
+  margin-left: 130px;
 }

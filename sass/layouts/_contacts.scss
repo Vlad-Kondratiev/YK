@@ -1,5 +1,8 @@
 /* Contacts */
 .contacts {
+  max-width: 1280px;
+  height: 644px;
+  margin: 0 auto;
   background-color: var(--secondary-bg--mode-dark);
   background-image: linear-gradient(
       to right,
@@ -10,6 +13,7 @@
   background-position: top left, top calc(50%) left calc(50% + 312px);
   background-repeat: no-repeat;
   background-size: 50%, cover;
+   
 }
 
 .contacts-container {

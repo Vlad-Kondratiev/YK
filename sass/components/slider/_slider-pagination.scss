@@ -6,3 +6,20 @@
     flex-direction: column;
     width: 18px;
 }
+
+.slider__item {
+    margin-left: auto;
+    margin-bottom: 12px;
+    width: 8px;
+    height: 2px;
+    background-color: #9da4bd;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    &--active {
+        width: 100%;
+        background-color: #fff;
+    }
+}

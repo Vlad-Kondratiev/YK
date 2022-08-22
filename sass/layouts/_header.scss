@@ -1,14 +1,20 @@
 /* Header */
 .header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-  // padding-top: 42px;
-  // padding-bottom: 0px;
-  // background-color: var(--primary-bg--mode-dark);
+  display: none;
 
-  transition: background-color var(--anim-slow), backdrop-filter var(--anim-slow), bax-shadow var(--anim-slow);
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 10;
+    // padding-top: 42px;
+    // padding-bottom: 0px;
+    // background-color: var(--primary-bg--mode-dark);
+
+    transition: background-color var(--anim-slow),   backdrop-filter var(--anim-slow), bax-shadow var(--anim-slow);
+  }
+  
 
   // @media screen and (min-width: 768px) {
   //   padding-top: 32px;

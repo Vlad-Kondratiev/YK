@@ -1,7 +1,7 @@
 :root {
   /* Основные шрифты */
-  // --main-font: "Open Sans", sans-serif;
-  // --secondary-font: "Raleway", sans-serif;
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --accent-cl: #ff6c00;
 
   /* Светлая тема текста */
@@ -31,6 +31,10 @@
 
   --anim-fast: 250ms ease-in;
   --anim-slow: 500ms ease-in-out;
+
+   /* grid items */
+  --items: 1;
+  --indent: 30px;
 }
 
 // Змінні SASS
@@ -39,3 +43,4 @@ $secondary-font: "Raleway", sans-serif;
 
 
 $primary-txt--mode-light: #555555;
+
